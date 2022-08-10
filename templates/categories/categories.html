@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- categories section starts  -->
+
+<section class="categories" id="categories" style="margin-top: 50px">
+
+    <h1 class="heading"> product <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src= {% static "image/lap3.jpeg"  %}alt="">
+            <h3>PHONES</h3>
+            <p>upto 30% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src= {% static "image/buds4.jpeg" %} alt="">
+            <h3>ACCESSORIES</h3>
+            <p>upto 30% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src= {% static "image/lap4.jpeg" %} alt="">
+            <h3>COMPUTERS</h3>
+            <p>upto 30% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src= {% static "image/drone2.jpeg" %} alt="">
+            <h3>DRONES AND CAMERAS</h3>
+            <p>upto 15% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}
