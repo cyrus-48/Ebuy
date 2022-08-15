@@ -1,0 +1,28 @@
+ {% extends 'base.html' %}
+ {% block content %}
+     <section style="margin-top: 50px">
+     <center>
+       <div class="swiper-wrapper center" style="margin-top: 40px">
+            <form action="cart/" method="POST">
+                {% csrf_token %}
+            <div class="swiper-slide box ">
+                <img src="/media/{{products.pimage}}" alt="" height="200px" width="150px" name="image">
+                <h3 name  = "productname">{{ products.name }}</h3>
+                <P>{{ products.description}}</P>
+                <div class="price" name  = "productprice">Ksh {{ products.cost }} </div>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <input type="submit" value = "add to cart" class = "btn">
+            </div>
+                </form>
+        </div>
+            </center>
+     </section>
+
+ {% endblock %}

@@ -67,4 +67,31 @@
     </div>
 
 </section>
+    <section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            {%  for products in product %}
+            <div class="swiper-slide box {{ forloop.counter }}">
+                <img src="/media/{{products.pimage}}" alt="">
+                <h3>{{ products.name }}</h3>
+                <div class="price">Ksh {{ products.cost }} </div>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>s
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">view more</a>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+</section>
+
 {% endblock %}
