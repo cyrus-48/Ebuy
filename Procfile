@@ -1,0 +1,1 @@
+web: gunicorn Ebuy.wsgi

@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{% block content %}
+    <section class="products" id="products">
+    <div class="shopping-cart">
+
+ {% for product in cart %}
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="/media/{{product.pimage}}"  alt="" height="200px" width="150px">
+            <div class="content">
+                <h3>{{ product.name }}</h3>
+                <span class="price">{{ product.price }}</span>
+                <span class="quantity">qty : 4</span>
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="total"> total : $19.69/- </div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+    </section>
+
+{% endblock %}
