@@ -37,7 +37,7 @@ def cart(request):
 
 def cartitems(request):
     cart = Cart.objects.all().values()
-    template = loader.get_template('base.html')
+    template = loader.get_template('cart/cart.html')
     context = {
         'cart': cart,
     }

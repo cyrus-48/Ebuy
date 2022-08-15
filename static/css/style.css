@@ -184,7 +184,8 @@ section{
 }
 
 .header .shopping-cart .box img{
-    height:10rem;
+    height:200px;
+    width:150px;
 }
 
 .header .shopping-cart .box .fa-trash{
